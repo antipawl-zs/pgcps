@@ -1,0 +1,70 @@
+{
+  "generated_at": "2026-11-20T18:52:38.630095+00:00",
+  "vendor": "Aruba",
+  "site_count": 3,
+  "totals": {
+    "sites_scanned": 3,
+    "sites_reachable": 0,
+    "ssh_open_hosts": 0,
+    "aruba_switches": 0,
+    "reachable_switches": 0,
+    "up_interfaces": 0
+  },
+  "sites": [
+    {
+      "id": "adelphi",
+      "name": "Adelphi Elementary",
+      "abbreviation": "ADELP",
+      "network_prefix": "10.1.x.x",
+      "scanned_at": "2026-11-20T18:52:34.080773+00:00",
+      "candidates_probed": 273,
+      "ssh_open_hosts": 0,
+      "switch_count": 0,
+      "aruba_count": 0,
+      "reachable_count": 0,
+      "up_interface_total": 0,
+      "switches": [],
+      "discovery_hosts": [],
+      "status": "unreachable",
+      "message": "No SSH listeners found on discovery ranges. Confirm VIA/VPN reachability to this site network."
+    },
+    {
+      "id": "bfj",
+      "name": "Bonnie F. Johns Admin (BFJ)",
+      "abbreviation": "BFJ",
+      "network_prefix": "10.22.x.x",
+      "scanned_at": "2026-11-20T18:52:35.604994+00:00",
+      "candidates_probed": 273,
+      "ssh_open_hosts": 0,
+      "switch_count": 0,
+      "aruba_count": 0,
+      "reachable_count": 0,
+      "up_interface_total": 0,
+      "switches": [],
+      "discovery_hosts": [],
+      "status": "unreachable",
+      "message": "No SSH listeners found on discovery ranges. Confirm VIA/VPN reachability to this site network."
+    },
+    {
+      "id": "sasscer",
+      "name": "Sasscer Admin",
+      "abbreviation": "SAS",
+      "network_prefix": "10.159.x.x",
+      "scanned_at": "2026-11-20T18:52:37.117951+00:00",
+      "candidates_probed": 273,
+      "ssh_open_hosts": 0,
+      "switch_count": 0,
+      "aruba_count": 0,
+      "reachable_count": 0,
+      "up_interface_total": 0,
+      "switches": [],
+      "discovery_hosts": [],
+      "status": "unreachable",
+      "message": "No SSH listeners found on discovery ranges. Confirm VIA/VPN reachability to this site network."
+    }
+  ],
+  "credentials_profiles": [
+    "daclark",
+    "admin"
+  ]
+}

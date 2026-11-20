@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aruba Switch Inventory</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="atmosphere" aria-hidden="true"></div>
+  <header class="top">
+    <div class="brand">
+      <span class="brand-mark">PGCPS</span>
+      <div>
+        <h1>Aruba Switch Inventory</h1>
+        <p class="tagline">Live counts from three site scans</p>
+      </div>
+    </div>
+    <div class="meta" id="scan-meta">Loading scan…</div>
+  </header>
+
+  <main>
+    <section class="totals" id="totals" aria-label="Totals"></section>
+    <section class="sites" id="sites" aria-label="Sites"></section>
+  </main>
+
+  <footer>
+    <span>Local nginx inventory</span>
+    <span id="footer-stamp"></span>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
