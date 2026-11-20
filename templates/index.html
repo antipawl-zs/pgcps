@@ -30,16 +30,33 @@
                     <input type="text" class="form-control" id="hostname" name="hostname" required>
                 </div>
                 <div class="mb-3">
-                    <label for="username" class="form-label">Username</label>
-                    <input type="text" class="form-control" id="username" name="username" required>
+                    <label for="profile" class="form-label">Stored switch account</label>
+                    <select class="form-select" id="profile" name="profile">
+                        <option value="">Custom (enter below)</option>
+                        {% for name in profiles %}
+                        <option value="{{ name }}">{{ name }}</option>
+                        {% endfor %}
+                    </select>
+                    <div class="form-text">Passwords stay server-side for stored accounts.</div>
                 </div>
-                <div class="mb-3">
+                <div class="mb-3" id="custom-creds">
+                    <label for="username" class="form-label">Username</label>
+                    <input type="text" class="form-control mb-2" id="username" name="username">
                     <label for="password" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="password" name="password" required>
+                    <input type="password" class="form-control" id="password" name="password">
                 </div>
                 <button type="submit" class="btn btn-primary w-100">Check For Devices</button>
             </form>
         </div>
     </div>
+    <script>
+        const profile = document.getElementById('profile');
+        const custom = document.getElementById('custom-creds');
+        function sync() {
+            custom.style.display = profile.value ? 'none' : 'block';
+        }
+        profile.addEventListener('change', sync);
+        sync();
+    </script>
 </body>
 </html>
